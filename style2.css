@@ -1,0 +1,190 @@
+/*_________________________Login Form Style______________________________ */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+
+.container2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    width: 600px;
+    height: 700px;
+    background: rgba(0, 0, 0, 0.21);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #fe3f55;
+}
+
+.background-img {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+}
+
+.close_btn {
+    width: 25px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.website_logo {
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    animation: bounce 2s ease-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translatey(-5px);
+    
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+    
+}
+
+.main_title {
+    cursor: default;
+    font-size: 30px;
+    color: #fe3f55;
+    margin: 50px 0 20px 0;
+}
+
+.google_button {
+    background: #fe3f5536;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #fe3f55;
+    width: 350px;
+    height: 50px;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.google_button:hover {
+    background: #45f3ff36;
+    border: 2px solid #45f3ff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.google_button .google_logo {
+    width: 25px;
+}
+
+.google_button .google_text {
+    font-size: 10px;
+    color: rgb(200, 200, 200);
+}
+
+.microsoft_button {
+    background: #fe3f5536;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #fe3f55;
+    width: 350px;
+    height: 50px;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.microsoft_button:hover {
+    background: #45f3ff36;
+    border: 2px solid #45f3ff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.microsoft_button .microsoft_logo {
+    width: 30px;
+}
+
+.microsoft_button .microsoft_text {
+    font-size: 10px;
+    color: rgb(200, 200, 200);
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #45f3ff;
+
+}
+
+.or hr {
+    width: 150px;
+    border: 0.7px solid #45f3ff;
+}
+
+.or p {
+    font-size: 10px;
+    color: rgb(167, 167, 167);
+}
+
+.other_user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fe3f55;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    color: #fe3f55;
+    width: 350px;
+    height: 50px;
+    border-radius: 70px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.other_user::placeholder {
+    font-size: 12px;
+    text-align: center;
+}
+
+.next_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #45f3ff;
+    width: 350px;
+    height: 50px;
+}
