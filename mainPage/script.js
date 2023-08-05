@@ -19,3 +19,9 @@ gsap.fromTo('.logo-name' , {
     delay:3
 }
 );
+
+
+
+function fullscreen () {
+    document.documentElement.requestFullscreen()
+}

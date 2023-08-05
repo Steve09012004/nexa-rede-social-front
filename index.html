@@ -11,6 +11,21 @@
 </head>
 
 <body>
+
+    <div id="conteudoContainer">
+
+    </div>
+
+        <div id="containneralerhidden">
+            <div id="alerthidden">
+                    <div id="box2hidden">
+                        <h3>A aplicação será executada em tela cheia.</h3>
+                        <button id="buttonOk" type="button">Ok</button>
+                    </div>
+            </div>
+            
+        </div>
+ 
     <header class="headerhidden">
         <div class="header">
             <!--<span class="border-line"></span>-->
@@ -30,25 +45,19 @@
                 <h2>Desperte sua essência, <br>conecte-se ao mundo.</h2>
         </div>
         <div class="container">
-            <div class="btn"><a href="mainPage/index.html">Cadastrar-se</a></div>
+            <div onclick="openpage1()" class="btn"><a href="">Cadastrar-se</a></div>
         </div>
     </header>
-    <div class="loading-page">
-        <svg id="svg" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
-            <style>svg{fill:#fe3f55}</style>
-            <path d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z"/>
-        </svg> 
+    <div id="loading-page">
 
-        <div class="name-container">
-            <div class="logo-name">nexa</div>
-        </div>
-
-    </div>    
+    </div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
     integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./script.js"></script>
-
+<script>
+    document.documentElement.requestFullscreen()
+</script>
 </html>
