@@ -61,14 +61,6 @@ function fullscreen () {
 }
 
 function openpage1() {
-    fetch('mainPage/index.html')
-        .then(response => response.text())
-        .then(data => {
-          var conteudoContainer = document.getElementById('conteudoContainer');
-          conteudoContainer.innerHTML = data;
-        })
-        .catch(error => console.error('Erro ao carregar o conteúdo: ', error));
-    
 }
 
 showalert()
